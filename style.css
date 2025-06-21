@@ -1,0 +1,64 @@
+body {
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-navbar {
+  background: linear-gradient(90deg, rgba(156, 39, 176, 0.9), rgba(255, 152, 0, 0.9));
+}
+
+.hero {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  max-width: 800px;
+  margin: auto;
+}
+
+#contador {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffd54f;
+}
+
+.btn-junino {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+}
+
+.btn-junino:hover {
+  background-color: #fb8c00;
+}
+
+.section-title {
+  color: #e65100;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  border-bottom: 4px solid #ff9800;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+footer small {
+  font-size: 0.85rem;
+}

@@ -1,0 +1,51 @@
+body {
+  background-color: #fefefe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.custom-navbar {
+  background: linear-gradient(90deg, #8e24aa, #ff9800);
+}
+
+.section-title {
+  font-weight: 700;
+  color: #8e24aa;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.btn-junino {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-junino:hover {
+  background-color: #f57c00;
+  color: #fff;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: #444;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #ff9800;
+}
+
+footer {
+  background-color: #212529;
+  color: #f1f1f1;
+  font-size: 0.9rem;
+}
