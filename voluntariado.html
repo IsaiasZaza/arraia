@@ -1,107 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Voluntariado - Arraiá Digital</title>
+
+  <!-- Bootstrap e ícones -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/voluntariado.css" />
-</head>
-<body>
 
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="voluntariado.css" />
+</head>
+
+<body>
   <!-- NAVBAR -->
   <header class="navbar navbar-expand-lg custom-navbar navbar-dark py-3">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">🎉 Arraiá Digital</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navArraia">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navArraia">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="barraquinhas.html">Barraquinhas</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Voluntariado</a></li>
-          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-        </ul>
-      </div>
     </div>
   </header>
 
   <!-- CONTEÚDO -->
   <main class="container py-5">
-    <div class="text-center mb-5">
+    <div class="text-center mb-4">
       <h1 class="section-title">Seja Voluntário!</h1>
       <p class="lead">Ajude a tornar o Arraiá Digital ainda mais especial participando da nossa equipe!</p>
+      <h4 id="contador" class="text-danger fw-bold"></h4>
+      <div id="mensagemCaipira"></div>
     </div>
 
-    <div class="row align-items-center g-5 mb-5">
-      <div class="col-md-6">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80"
-             class="img-fluid rounded shadow" alt="Voluntário no evento" />
-      </div>
-      <div class="col-md-6">
-        <div class="highlight-box">
-          <h4 class="mb-3 text-center">Por que participar?</h4>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-check-circle-fill"></i> Vivencie uma experiência única</li>
-            <li><i class="bi bi-check-circle-fill"></i> Conheça novas pessoas</li>
-            <li><i class="bi bi-check-circle-fill"></i> Desenvolva habilidades</li>
-            <li><i class="bi bi-check-circle-fill"></i> Contribua com a comunidade</li>
-          </ul>
-          <div class="text-center mt-3">
-            <a href="#formulario" class="btn btn-junino btn-lg"><i class="bi bi-pencil-square"></i> Quero Participar</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FORMULÁRIO -->
-    <div id="formulario" class="highlight-box">
+    <div id="formulario" class="highlight-box p-4 rounded shadow">
       <h3 class="mb-4 text-center">Formulário de Inscrição</h3>
-      <form>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label for="nome" class="form-label">Nome Completo</label>
-            <input type="text" class="form-control" id="nome" placeholder="Seu nome" />
+
+      <form id="form-voluntario">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome Completo (Nome de Festeiro)</label>
+          <input type="text" class="form-control" id="nome" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Nível de Animação Junina (1 a 5 espigas de milho)</label><br />
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="animacao" value="1" required />
+            <label class="form-check-label">🌽</label>
           </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" />
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="animacao" value="2" />
+            <label class="form-check-label">🌽🌽</label>
           </div>
-          <div class="col-md-6">
-            <label for="telefone" class="form-label">Telefone</label>
-            <input type="tel" class="form-control" id="telefone" placeholder="(61) 99999-9999" />
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="animacao" value="3" />
+            <label class="form-check-label">🌽🌽🌽</label>
           </div>
-          <div class="col-md-6">
-            <label for="interesse" class="form-label">Área de Interesse</label>
-            <select class="form-select" id="interesse">
-              <option selected disabled>Selecione...</option>
-              <option>Organização</option>
-              <option>Barraquinhas</option>
-              <option>Recepção</option>
-              <option>Tecnologia</option>
-            </select>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="animacao" value="4" />
+            <label class="form-check-label">🌽🌽🌽🌽</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="animacao" value="5" />
+            <label class="form-check-label">🌽🌽🌽🌽🌽</label>
           </div>
         </div>
+
+        <div class="mb-3">
+          <label for="prenda" class="form-label">Minha Prenda Tecnológica</label>
+          <textarea class="form-control" id="prenda" rows="2" required></textarea>
+          <span id="emoji-easter"></span>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Disponibilidade</label><br />
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="preparativos" id="prep" />
+            <label class="form-check-label" for="prep">Preparativos</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="durante" id="durante" />
+            <label class="form-check-label" for="durante">Durante a Festa</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="desmontagem" id="desmontagem" />
+            <label class="form-check-label" for="desmontagem">Desmontagem Cibernética</label>
+          </div>
+        </div>
+
         <div class="text-center mt-4">
           <button type="submit" class="btn btn-junino btn-lg">
             <i class="bi bi-send-fill"></i> Enviar
           </button>
         </div>
       </form>
+
+      <!-- Div da mensagem final (começa escondida) -->
+      <div id="mensagem-final" class="text-center py-5 d-none">
+        <!-- Aqui a mensagem de sucesso vai aparecer -->
+      </div>
     </div>
+
   </main>
 
   <!-- FOOTER -->
-  <footer class="text-center py-4">
+  <footer class="text-center py-4 mt-5">
     <div class="container">
       &copy; 2025 Arraiá Digital do Cerrado <br />
       <small><i class="bi bi-envelope"></i> contato@arraiadigital.com |
-              <i class="bi bi-phone"></i> (61) 99999-9999</small>
+        <i class="bi bi-phone"></i> (61) 99999-9999</small>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

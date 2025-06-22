@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- NAVBAR -->
@@ -36,7 +38,8 @@
       <div id="contador" class="my-4"></div>
       <p id="mensagemCaipira" class="text-success fw-bold"></p>
       <div class="mt-4">
-        <a href="barraquinhas.html" class="btn btn-junino btn-lg me-2"><i class="bi bi-shop"></i> Explorar Barraquinhas</a>
+        <a href="barraquinhas.html" class="btn btn-junino btn-lg me-2"><i class="bi bi-shop"></i> Explorar
+          Barraquinhas</a>
         <a href="voluntariado.html" class="btn btn-outline-light btn-lg"><i class="bi bi-heart"></i> Quero Ajudar</a>
       </div>
     </div>
@@ -49,25 +52,30 @@
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Correio Elegante via Drone" />
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top" alt="Correio Elegante via Drone" />
             <div class="card-body">
               <h5 class="card-title">Correio Elegante via Drone</h5>
-              <p class="card-text">Mensagem romântica entregue com precisão por nossos drones. Amor no ar, literalmente!</p>
+              <p class="card-text">Mensagem romântica entregue com precisão por nossos drones. Amor no ar, literalmente!
+              </p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5VvAcO7PDnnnylIn5CC5gD2ofJQWtB7M1JA&s" class="card-img-top" alt="Pescaria QR Code" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5VvAcO7PDnnnylIn5CC5gD2ofJQWtB7M1JA&s"
+              class="card-img-top" alt="Pescaria QR Code" />
             <div class="card-body">
               <h5 class="card-title">Pescaria QR Code</h5>
-              <p class="card-text">Pesque prêmios escaneando QR codes escondidos! Brincadeira junina com pitada de tecnologia.</p>
+              <p class="card-text">Pesque prêmios escaneando QR codes escondidos! Brincadeira junina com pitada de
+                tecnologia.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card shadow-sm">
-            <img src="https://pagbem.com.br/wp-content/uploads/2019/06/As-melhores-Festas-Juninas-do-Nordeste.jpeg" class="card-img-top" alt="Realidade Aumentada" />
+            <img src="https://pagbem.com.br/wp-content/uploads/2019/06/As-melhores-Festas-Juninas-do-Nordeste.jpeg"
+              class="card-img-top" alt="Realidade Aumentada" />
             <div class="card-body">
               <h5 class="card-title">Arraiá em Realidade Aumentada</h5>
               <p class="card-text">A festa na palma da mão: fogueira, quadrilha e fogos direto na sua tela!</p>
@@ -84,11 +92,13 @@
       <h2 class="section-title">Sabores Juninos</h2>
       <div class="row align-items-center">
         <div class="col-md-6 mb-4 mb-md-0">
-          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Comidas típicas" />
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
+            class="img-fluid rounded shadow" alt="Comidas típicas" />
         </div>
         <div class="col-md-6 text-start">
           <h4>Delícias do Cerrado</h4>
-          <p>Pamonha, canjica, pé de moleque... tudo preparado com carinho e servido com pagamento digital sem filas!</p>
+          <p>Pamonha, canjica, pé de moleque... tudo preparado com carinho e servido com pagamento digital sem filas!
+          </p>
         </div>
       </div>
     </div>
@@ -99,16 +109,39 @@
     <div class="container">
       <h2 class="section-title text-light">Participe & Contribua</h2>
       <p class="mb-4">Seja parte da nossa equipe ou baixe o app do Arraiá Digital para ter uma experiência completa!</p>
-      <a href="voluntariado.html" class="btn btn-light btn-lg me-2"><i class="bi bi-person-plus"></i> Seja Voluntário</a>
+      <a href="voluntariado.html" class="btn btn-light btn-lg me-2"><i class="bi bi-person-plus"></i> Seja
+        Voluntário</a>
       <a href="#" class="btn btn-junino btn-lg"><i class="bi bi-download"></i> Baixar App</a>
     </div>
   </section>
+
+  <!-- CURIO APRENDER — Componente Interativo -->
+  <!-- CURIO APRENDER — Componente Interativo -->
+  <section class="text-center py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Curiosidade Junina 🎆</h2>
+      <p class="mb-4">Clique no botão e descubra algo novo sobre nossas festas!</p>
+      <button id="abrirModal" class="btn btn-junino btn-lg"><i class="bi bi-lightbulb"></i> Me conte uma
+        curiosidade!</button>
+    </div>
+  </section>
+
+  <!-- Modal Simples -->
+  <div id="modalCuriosidade" class="modal-junino">
+    <div class="modal-junino-conteudo">
+      <span id="fecharModal" class="modal-junino-fechar">&times;</span>
+      <h4>Você sabia?</h4>
+      <p id="textoCuriosidade"></p>
+    </div>
+  </div>
+
 
   <!-- FOOTER -->
   <footer class="text-center py-3 text-light bg-dark">
     <div class="container">
       &copy; 2025 Arraiá Digital do Cerrado <br />
-      <small><i class="bi bi-envelope"></i> contato@arraiadigital.com | <i class="bi bi-phone"></i> (61) 99999-9999</small>
+      <small><i class="bi bi-envelope"></i> contato@arraiadigital.com | <i class="bi bi-phone"></i> (61)
+        99999-9999</small>
     </div>
   </footer>
 
@@ -116,4 +149,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
