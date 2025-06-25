@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arraiá Digital do Cerrado</title>
+  
+  <!-- Favicon (ícone da aba do navegador) -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Bootstrap e estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar navbar-expand-lg custom-navbar navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/logo.png" alt="Logo Arraiá Digital" width="40" height="40" class="rounded-circle" />
+        <span class="fw-bold">Arraiá Digital</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navArraia">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navArraia">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="barraquinhas.html">Barraquinhas</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="voluntariado.html">Voluntariado</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="container d-flex flex-column align-items-center justify-content-center vh-100">
+    <div class="hero text-center">
+      <h1 class="display-4">Bem-vindo ao Terreiro Virtual!</h1>
+      <p class="lead">O arraiá mais high-tech do Cerrado: tradição e inovação juntas no Parque da Cidade!</p>
+      <div id="contador" class="my-4"></div>
+      <p id="mensagemCaipira" class="text-success fw-bold"></p>
+      <div class="mt-4">
+        <a href="barraquinhas.html" class="btn btn-junino btn-lg me-2"><i class="bi bi-shop"></i> Explorar
+          Barraquinhas</a>
+        <a href="voluntariado.html" class="btn btn-outline-light btn-lg"><i class="bi bi-heart"></i> Quero Ajudar</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- BARRAQUINHAS -->
+  <section class="bg-light text-center py-5">
+    <div class="container">
+      <h2 class="section-title">Barraquinhas High-Tech</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="/assets/CorreioEleganteviaDrone.png" class="card-img-top" alt="Correio Elegante via Drone" />
+            <div class="card-body">
+              <h5 class="card-title">Correio Elegante via Drone</h5>
+              <p class="card-text">Mensagem romântica entregue com precisão por nossos drones. Amor no ar, literalmente!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="/assets/PescariaQRCode.png" class="card-img-top" alt="Pescaria QR Code" />
+            <div class="card-body">
+              <h5 class="card-title">Pescaria QR Code</h5>
+              <p class="card-text">Pesque prêmios escaneando QR codes escondidos! Brincadeira junina com pitada de
+                tecnologia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm image">
+            <img src="/assets/ArraiáemRealidadeAumentada.png" class="card-img-top" alt="Realidade Aumentada" />
+            <div class="card-body">
+              <h5 class="card-title">Arraiá em Realidade Aumentada</h5>
+              <p class="card-text">A festa na palma da mão: fogueira, quadrilha e fogos direto na sua tela!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SABORES JUNINOS -->
+  <section class="bg-warning bg-opacity-25 text-center py-5">
+    <div class="container">
+      <h2 class="section-title">Sabores Juninos</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
+            class="img-fluid rounded shadow" alt="Comidas típicas" />
+        </div>
+        <div class="col-md-6 text-start">
+          <h4>Delícias do Cerrado</h4>
+          <p>Pamonha, canjica, pé de moleque... tudo preparado com carinho e servido com pagamento digital sem filas!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTARIADO -->
+  <section class="text-center text-light py-5" style="background-color: rgba(156, 39, 176, 0.85);">
+    <div class="container">
+      <h2 class="section-title text-light">Participe & Contribua</h2>
+      <p class="mb-4">Seja parte da nossa equipe ou baixe o app do Arraiá Digital para ter uma experiência completa!</p>
+      <a href="voluntariado.html" class="btn btn-light btn-lg me-2"><i class="bi bi-person-plus"></i> Seja
+        Voluntário</a>
+      <a href="#" class="btn btn-junino btn-lg"><i class="bi bi-download"></i> Baixar App</a>
+    </div>
+  </section>
+
+  <!-- CURIO APRENDER — Componente Interativo -->
+  <!-- CURIO APRENDER — Componente Interativo -->
+  <section class="text-center py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Curiosidade Junina 🎆</h2>
+      <p class="mb-4">Clique no botão e descubra algo novo sobre nossas festas!</p>
+      <button id="abrirModal" class="btn btn-junino btn-lg"><i class="bi bi-lightbulb"></i> Me conte uma
+        curiosidade!</button>
+    </div>
+  </section>
+
+  <!-- Modal Simples -->
+  <div id="modalCuriosidade" class="modal-junino">
+    <div class="modal-junino-conteudo">
+      <span id="fecharModal" class="modal-junino-fechar">&times;</span>
+      <h4>Você sabia?</h4>
+      <p id="textoCuriosidade"></p>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3 text-light bg-dark">
+    <div class="container">
+      &copy; 2025 Arraiá Digital do Cerrado <br />
+      <small><i class="bi bi-envelope"></i> contato@arraiadigital.com | <i class="bi bi-phone"></i> (61)
+        99999-9999</small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

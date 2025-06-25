@@ -1,0 +1,115 @@
+/* Plano de fundo com estampa de chita e sobreposição digital */
+body {
+  background-image: url('/assets/ESTAMPA\ DIGITAL.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Sobreposição digital sutil */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/chita-digital-pattern.png');
+  background-size: contain;
+  background-repeat: repeat;
+  opacity: 0.08;
+  z-index: -1;
+}
+
+/* Navbar com gradiente alegre */
+.custom-navbar {
+  background: linear-gradient(90deg, #ab47bc, #ff9800);
+}
+
+/* Títulos e seções */
+.section-title {
+  font-weight: bold;
+  color: #ab47bc;
+}
+
+.lead {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+/* Caixa destacada com sombra e animação leve */
+.highlight-box {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.highlight-box:hover {
+  transform: scale(1.01);
+}
+
+/* Botão temático junino */
+.btn-junino {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.btn-junino:hover {
+  background-color: #fb8c00;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background-color: #212529;
+  color: #f1f1f1;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ffcc80;
+}
+
+/* Ícones com estilo */
+.bi-check-circle-fill,
+.bi-star-fill,
+.bi-people-fill,
+.bi-lightbulb-fill,
+.bi-heart-fill {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* Emojis de easter egg (sanfona e fogueira) */
+#emoji-easter {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  animation: fadeOut 3s forwards;
+  display: inline-block;
+}
+
+/* Fade-out para emojis */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+#form-voluntario,
+#mensagem-final {
+  min-height: 400px;
+}
+
+

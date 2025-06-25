@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arraiá Digital do Cerrado</title>
+
+  <!-- Favicon (ícone da aba do navegador) -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Bootstrap e estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="voluntariado.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar navbar-expand-lg custom-navbar navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/logo.png" alt="Logo Arraiá Digital" width="40" height="40" class="rounded-circle" />
+        <span class="fw-bold">Arraiá Digital</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navArraia">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navArraia">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="barraquinhas.html">Barraquinhas</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="voluntariado.html">Voluntariado</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main class="container py-5">
+    <div class="text-center mb-4">
+      <h1 class="section-title">Seja Voluntário!</h1>
+      <p class="lead">Ajude a tornar o Arraiá Digital ainda mais especial participando da nossa equipe!</p>
+      <h4 id="contador" class="text-danger fw-bold"></h4>
+      <div id="mensagemCaipira"></div>
+    </div>
+
+    <div id="formulario" class="highlight-box p-4 rounded shadow">
+      <h3 class="mb-4 text-center">Formulário de Inscrição</h3>
+
+      <form id="form-voluntario">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome Completo (Nome de Festeiro)</label>
+          <input type="text" class="form-control" id="nome" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Nível de Animação Junina (1 a 5 espigas de milho)</label><br />
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="animacao" value="1" required />
+            <label class="form-check-label">🌽</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="animacao" value="2" />
+            <label class="form-check-label">🌽🌽</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="animacao" value="3" />
+            <label class="form-check-label">🌽🌽🌽</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="animacao" value="4" />
+            <label class="form-check-label">🌽🌽🌽🌽</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="animacao" value="5" />
+            <label class="form-check-label">🌽🌽🌽🌽🌽</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="prenda" class="form-label">Minha Prenda Tecnológica</label>
+          <textarea class="form-control" id="prenda" rows="2" required></textarea>
+          <span id="emoji-easter"></span>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Disponibilidade</label><br />
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="preparativos" id="prep" />
+            <label class="form-check-label" for="prep">Preparativos</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="durante" id="durante" />
+            <label class="form-check-label" for="durante">Durante a Festa</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="desmontagem" id="desmontagem" />
+            <label class="form-check-label" for="desmontagem">Desmontagem Cibernética</label>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-junino btn-lg">
+            <i class="bi bi-send-fill"></i> Enviar
+          </button>
+        </div>
+      </form>
+
+      <!-- Div da mensagem final (começa escondida) -->
+      <div id="mensagem-final" class="text-center py-5 d-none">
+        <!-- Aqui a mensagem de sucesso vai aparecer -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-4 mt-5">
+    <div class="container">
+      &copy; 2025 Arraiá Digital do Cerrado <br />
+      <small><i class="bi bi-envelope"></i> contato@arraiadigital.com |
+        <i class="bi bi-phone"></i> (61) 99999-9999</small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

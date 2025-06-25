@@ -1,0 +1,36 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-navbar {
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+}
+
+.section-title {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.custom-card {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 230px;
+  object-fit: cover;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #ffe0b2, #fff3e0);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
