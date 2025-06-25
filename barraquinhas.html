@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Barraquinhas High-Tech - Arraiá Digital</title>
+  <title>Arraiá Digital do Cerrado</title>
+
+  <!-- Favicon (ícone da aba do navegador) -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Bootstrap e estilos -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="barraquinhas.css" />
@@ -15,16 +20,20 @@
   <!-- NAVBAR -->
   <header class="navbar navbar-expand-lg custom-navbar navbar-dark py-3">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">🎉 Arraiá Digital</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/logo.png" alt="Logo Arraiá Digital" width="40" height="40" class="rounded-circle" />
+        <span class="fw-bold">Arraiá Digital</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navArraia">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navArraia">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Barraquinhas</a></li>
-          <li class="nav-item"><a class="nav-link" href="voluntariado.html">Voluntariado</a></li>
-          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="barraquinhas.html">Barraquinhas</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="voluntariado.html">Voluntariado</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
         </ul>
       </div>
     </div>
@@ -39,8 +48,7 @@
     <div class="row g-3">
       <div class="col-md-6">
         <div class="card custom-card shadow">
-          <img src="/assets/Correio.png"
-            class="card-img-top" alt="Drone entregando bilhete">
+          <img src="/assets/CorreioEleganteviaDrone.png" class="card-img-top" alt="Drone entregando bilhete">
           <div class="card-body">
             <h5 class="card-title">Correio Elegante via Drone</h5>
             <p class="card-text">Mande aquele bilhetinho especial que será entregue por drone, com estilo e emoção!</p>
@@ -51,8 +59,7 @@
 
       <div class="col-md-6">
         <div class="card custom-card shadow">
-          <img src="assets/pescaria.png" class="card-img-top"
-            alt="Pescaria QR code">
+          <img src="assets/PescariaQRCode.png" class="card-img-top" alt="Pescaria QR code">
           <div class="card-body">
             <h5 class="card-title">Pescaria QR Code</h5>
             <p class="card-text">Use seu celular para pescar prêmios! Diversão garantida com um toque de inovação.</p>
@@ -63,8 +70,7 @@
 
       <div class="col-md-6">
         <div class="card custom-card shadow">
-          <img src="/assets/arraia22.png"
-            class="card-img-top" alt="Realidade aumentada">
+          <img src="/assets/ArraiáemRealidadeAumentada.png" class="card-img-top" alt="Realidade aumentada">
           <div class="card-body">
             <h5 class="card-title">Arraiá em Realidade Aumentada</h5>
             <p class="card-text">Assista ao arraiá virtual com fogos, quadrilhas e fogueiras direto na sua tela!</p>
@@ -75,8 +81,7 @@
 
       <div class="col-md-6">
         <div class="card custom-card shadow">
-          <img src="/assets/camera.png"
-            class="card-img-top" alt="Selfie Caipira com Filtros">
+          <img src="/assets/camera.png" class="card-img-top" alt="Selfie Caipira com Filtros">
           <div class="card-body">
             <h5 class="card-title">Selfie Caipira com Filtros Interativos</h5>
             <p class="card-text">Entre no clima com filtros digitais: chapéu, trancinhas e fogueira animada! </p>

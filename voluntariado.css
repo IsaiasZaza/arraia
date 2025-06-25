@@ -1,7 +1,7 @@
 /* Plano de fundo com estampa de chita e sobreposição digital */
 body {
-  background-image: url('/assets/chita.png');
-  background-size: contain;
+  background-image: url('/assets/ESTAMPA\ DIGITAL.png');
+  background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
 }
